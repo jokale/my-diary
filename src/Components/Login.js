@@ -7,7 +7,7 @@ class Login extends React.Component {
                 <h1>My Diary Form</h1>
                 <form>
                     <label>Email</label><br></br>
-                    <input></input><br></br>
+                    <input type="text"></input><br></br>
                     <label>Password</label><br></br>
                     <input type="password"></input><br></br>
                     <br></br> <button type="submit">Log in</button><br></br>
