@@ -3,9 +3,24 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Navbar from './Components/Navbar'
+import Home from './Components/Home'
+import Login from './Components/Login'
+import SignUp from './Components/SignUp'
+
+import About from './Components/About'
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 ReactDOM.render(
-    <App />
+  <Router>
+  <App />
+  <Navbar/>
+  <Route exact path="/" component={Home} />
+  <Route exact path="/about" component={About} />
+  <Route exact path="/login" component={Login} />
+  <Route exact path="/signup" component={SignUp} />
+
+</Router>
  ,
   document.getElementById('root')
 );
