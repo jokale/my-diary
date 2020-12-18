@@ -10,6 +10,8 @@ import SignUp from './Components/SignUp'
 
 import About from './Components/About'
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+// import 'bootstrap/dist/css/bootstrap.css';
+
 
 ReactDOM.render(
   <Router>
